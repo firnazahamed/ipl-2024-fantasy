@@ -7,7 +7,7 @@ bucket_name = "summer-is-coming-2024"
 
 squads = sorted(
     [
-        blob.name.strip("Squads/")
+        blob.name.strip("Squads/").strip(".csv")
         for blob in client.list_blobs(bucket_name, prefix="Squads")
     ],
     reverse=True,
