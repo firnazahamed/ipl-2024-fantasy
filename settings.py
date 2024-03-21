@@ -278,4 +278,5 @@ player_id_dict = {
 
 service_account_credentials = "credentials/cricinfo-273202-a7420ddc1abd.json"
 squads_spreadsheet_url = "https://docs.google.com/spreadsheets/d/1KWLM_0V4QMZZrM62wRLAdY_5TkCg37nt3cFR8Mx67zU/"
+unsold_spreadsheet_url = "https://docs.google.com/spreadsheets/d/1TaBtVrQYrHdaYGrAGlA61fhs6e7bYVctaQ_CD8v1nKo/"
 # transfers_spreadsheet_url = "https://docs.google.com/spreadsheets/d/1lr6lLeTSSJk6it4k06ek5aqxTaVxLZMykacvvq55bP4/"
