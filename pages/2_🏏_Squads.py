@@ -7,14 +7,14 @@ bucket_name = "summer-is-coming-2024"
 
 squads = sorted(
     [
-        blob.name.strip("Squads/").strip("_squad.csv")
+        blob.name.strip("Squads/")
         for blob in client.list_blobs(bucket_name, prefix="Squads")
     ],
     reverse=True,
 )
 
-option = st.selectbox("Select match id", squads)
+option = st.selectbox("Select week", squads)
 
-squad_df = read_file(bucket_name, f"Squads/{option}_squad.csv")
+squad_df = read_file(bucket_name, f"Squads/{option}.csv")
 st.subheader("Squad")
 st.dataframe(squad_df)
