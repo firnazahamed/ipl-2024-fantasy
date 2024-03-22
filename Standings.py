@@ -3,7 +3,7 @@ import pandas as pd
 from helpers import read_file
 
 st.set_page_config(layout="wide")
-st.title("IPL 2024")
+st.title("Summer Is Coming 2024")
 st.subheader("**:blue[Cric Talk Draft]** :fire:")
 
 
