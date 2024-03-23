@@ -6,7 +6,7 @@ weeks = {
     "Week5": {"matches": [str(1422119 + i) for i in range(38, 48)]},
     "Week6": {"matches": [str(1422119 + i) for i in range(48, 57)]},
     "Week7": {"matches": [str(1422119 + i) for i in range(57, 70)]},
-    "Week8": {"matches": [str(1422119 + i) for i in range(4)]},
+    # "Week8": {"matches": [str(1422119 + i) for i in range(4)]},
 }
 
 owner_team_dict = {
@@ -274,6 +274,7 @@ player_id_dict = {
     "Jhathavedh Subramanyan": "919531",
     "Umran Malik": "1246528",
     "Jaydev Unadkat": "390484",
+    "Kwena Maphaka": "1294342",
 }
 
 service_account_credentials = "credentials/cricinfo-273202-a7420ddc1abd.json"
