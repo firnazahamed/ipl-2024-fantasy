@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from helpers import read_file
+from settings import retentions_list, rtm_list
 
 st.set_page_config(layout="wide")
 st.title("Player performance statistics")
@@ -42,3 +43,15 @@ for category in sorted(df["Category"].unique()):
     st.header(f"Best {category}")
     # st.subheader("Best Performers")
     st.dataframe(category_df.head(10))
+
+retention_df = df[df["Player_name"].isin(retentions_list)].sort_values(
+    "total_points", ascending=False
+)
+st.header(f"Retention Performers")
+st.dataframe(retention_df.head(11))
+
+rtm_df = df[df["Player_name"].isin(rtm_list)].sort_values(
+    "total_points", ascending=False
+)
+st.header(f"RTM Performers")
+st.dataframe(rtm_df.head(11))

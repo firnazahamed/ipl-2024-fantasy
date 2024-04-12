@@ -1,11 +1,14 @@
 weeks = {
     "Week1": {"matches": [str(1422119 + i) for i in range(10)]},
     "Week2": {"matches": [str(1422119 + i) for i in range(10, 18)]},
-    "Week3": {"matches": [str(1422119 + i) for i in range(18, 29)]},
-    "Week4": {"matches": [str(1422119 + i) for i in range(29, 38)]},
-    "Week5": {"matches": [str(1422119 + i) for i in range(38, 48)]},
-    "Week6": {"matches": [str(1422119 + i) for i in range(48, 57)]},
-    "Week7": {"matches": [str(1422119 + i) for i in range(57, 70)]},
+    "Week3": {
+        "matches": [str(1422119 + i) for i in range(18, 21)]
+        + [str(1426260 + i) for i in range(5)]
+    },
+    "Week4": {"matches": [str(1426260 + i) for i in range(5, 14)]},
+    "Week5": {"matches": [str(1426260 + i) for i in range(14, 23)]},
+    "Week6": {"matches": [str(1426260 + i) for i in range(23, 33)]},
+    "Week7": {"matches": [str(1426260 + i) for i in range(33, 42)]},
     # "Week8": {"matches": [str(1422119 + i) for i in range(4)]},
 }
 
@@ -22,6 +25,30 @@ owner_team_dict = {
     "Shar": "Underdogs",
     "Vaithy": "Thayir Saadham",
 }
+
+retentions_list = [
+    "Hardik Pandya",
+    "Mitchell Marsh",
+    "Rohit Sharma",
+    "Tilak Varma",
+    "Yashasvi Jaiswal",
+    "Sai Sudharsan",
+    "Dhruv Jurel",
+    "Heinrich Klaasen",
+    "Jasprit Bumrah",
+]
+
+rtm_list = [
+    "Ruturaj Gaikwad",
+    "Virat Kohli",
+    "David Warner",
+    "Rashid Khan",
+    "Glenn Maxwell",
+    "Faf du Plessis",
+    "Shubman Gill",
+    "Kuldeep Yadav",
+    "Wanindu Hasaranga",
+]
 
 player_id_dict = {
     "MS Dhoni": "28081",
@@ -275,6 +302,7 @@ player_id_dict = {
     "Umran Malik": "1246528",
     "Jaydev Unadkat": "390484",
     "Kwena Maphaka": "1294342",
+    "Matt Henry": "506612",
 }
 
 service_account_credentials = "credentials/cricinfo-273202-a7420ddc1abd.json"
